@@ -8,7 +8,7 @@ Alkuperäinen koodi: https://github.com/SC5/copyright-campaign ja esimerkki toim
 
 Asennus
 ---------------------
-1. Lataa lisäosa klikkaamalla 'ZIP' tuola ylhänä ja tallenna se työpöydälle
+1. Lataa lisäosa klikkaamalla 'ZIP' tuolla ylhäällä ja tallenna se työpöydälle
 2. Kirjaudu sisään WordPressin hallintapaneeliin
 3. Navigoi hallintapaneelissa 'Lisäosat' -> 'Lisää uusi' -> 'Siirrä'
 4. Valitse äsken työpöydälle ladattu zip-tiedosto ja klikkaa 'Asenna nyt'
