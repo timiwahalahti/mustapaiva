@@ -10,7 +10,7 @@ var copyrightCampaign = function(options) {
     setDefaultOption("showCoders", false);
     setDefaultOption("title", 'Järkeä tekijänoikeuslakiin?');
     setDefaultOption("bigText", 'Allekirjoita <a href="https://www.kansalaisaloite.fi/fi/aloite/70" target="_blank">kansalaisaloite kohtuullisemman tekijänoikeuslain puolesta</a>.');
-    setDefaultOption("smallText", 'Katso myös: <a href="#">Internetin musta päivä 23.4.</a>');
+    setDefaultOption("smallText", 'Katso myös: <a href="https://www.facebook.com/events/160986290729976/" target="_blank">Internetin musta päivä 23.4.</a>');
 
     console.log(options);
 
