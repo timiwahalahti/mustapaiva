@@ -2,7 +2,7 @@ Internetin musta päivä 23.4.
 ====================================
 "Päivä, jolloin Internet muuttuu Suomessa mustaksi. Päivä, jolloin verkossa näytetään, miltä maailma näyttää jatkossa, jos tekijänoikeuslaista ei poisteta sen ylilyöntejä." https://www.facebook.com/events/160986290729976/
 
-Tämä on WordPress lisäosa jonka asentamalla osallistut helposti Internetin mustaan päivään 23.4., voit asentaa ja aktivoida lisäosan jo nyt sillä se koodi tulee käyttöön vasta kampanjapäivänä (23.4.) ja näkyy jokaiselle sivuston kävijälle vain kerran.
+Tämä on WordPress lisäosa jonka asentamalla osallistut helposti Internetin mustaan päivään 23.4., voit asentaa ja aktivoida lisäosan jo nyt sillä koodi tulee käyttöön vasta kampanjapäivänä (23.4.).
 
 Alkuperäinen koodi: https://github.com/SC5/copyright-campaign ja esimerkki toiminnasta: http://sc5.github.com/copyright-campaign
 
@@ -32,7 +32,9 @@ Järkeä tekijänoikeuslakiin?
 Allekirjoita <a href="https://www.kansalaisaloite.fi/fi/aloite/70" target="_blank">kansalaisaloite kohtuullisemman tekijänoikeuslain puolesta</a>.
 Katso myös: <a href="https://www.facebook.com/events/160986290729976/" target="_blank">Internetin musta päivä 23.4.</a>
 ```
-Olisi kivaa jos olisit kiva ja mainitsisit koodin tekijät  <3 Valitse 'Näytä tekijät', niin sivun alalaitaan lisätään teksti "Code by SC5 and WordPress implementation by Wahalahti".
+### Olisi kivaa jos olisit kiva <3
+
+Ole kiva ja mainitse koodin tekijät, valitse asetuksista 'Näytä tekijät', niin sivun alalaitaan lisätään teksti "Code by SC5 and WordPress implementation by Wahalahti".
 
 Wut?
 ---------------------
