@@ -1,6 +1,6 @@
 Internetin musta päivä 23.4.
 ====================================
-"Päivä, jolloin Internet muuttuu Suomessa mustaksi. Päivä, jolloin verkossa näytetään, miltä maailma näyttää jatkossa, jos tekijänoikeuslaista ei poisteta sen ylilyöntejä." https://www.facebook.com/events/160986290729976/
+"Päivä, jolloin Internet muuttuu Suomessa mustaksi." https://www.facebook.com/events/160986290729976/
 
 Tämä on WordPress lisäosa jonka asentamalla osallistut helposti Internetin mustaan päivään 23.4., voit asentaa ja aktivoida lisäosan jo nyt sillä koodi tulee käyttöön vasta kampanjapäivänä (23.4.). Lisäosa käyttää SC5:en tekemää jQuery-koodia.
 
@@ -40,7 +40,7 @@ Wut?
 ---------------------
 Päivä, jolloin Internet muuttuu Suomessa mustaksi. Päivä, jolloin verkossa näytetään, miltä maailma näyttää jatkossa, jos tekijänoikeuslaista ei poisteta sen ylilyöntejä. Tule mukaan ja kutsu myös kaverisi - tehtävää riittää kaikille!
 
-Internetin mustalla päivällä 23.4. suomalainen verkkoyhteisö haluaa kiinnittää huomiota tekijänoikeuslaista Internetin toiminnalle koituviin vakaviin ongelmiin. Laki estää innovatiivisten verkkopalveluiden tekemistä. Lailla on luotu myös luotu yksityinen sensuurijärjestelmä, joka ei täytä sananvapauden rajoittemisen edellytyksenä olevia suhteellisuus - ja tarkkarajaisuusperiaatteita.
+Internetin mustalla päivällä 23.4. suomalainen verkkoyhteisö haluaa kiinnittää huomiota tekijänoikeuslaista Internetin toiminnalle koituviin vakaviin ongelmiin. Laki estää innovatiivisten verkkopalveluiden tekemistä. Lailla on myös luotu yksityinen sensuurijärjestelmä, joka ei täytä sananvapauden rajoittamisen edellytyksenä olevia suhteellisuus - ja tarkkarajaisuusperiaatteita.
 
 Internetin mustalla päivällä muistutetaan konkreettisesti, että tekijänoikeus johtaa tällä hetkellä käyttäjien palveluiden pimenemiseen. Kansalaislakialoitteemme "Järkeä tekijänoikeuslakiin" korjaisi toteutuessaan nämä molemmat ongelmat.
 
