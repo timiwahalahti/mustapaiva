@@ -43,7 +43,7 @@ var copyrightCampaign = function(options) {
 
             var coders = '';
             if (options['showCoders']) {
-                var coders = '<div class="credits"><a href="https://github.com/SC5/copyright-campaign/">Code</a> by <a href="http://sc5.io" target="_blank">SC5</a> and <a href="http://wahalahti.fi" target="_blank">Wahalahti</a></div>';
+                var coders = '<div class="credits"><a href="https://github.com/SC5/copyright-campaign/">Code</a> by <a href="http://sc5.io" target="_blank">SC5</a> and WordPress <a href="https://github.com/SipuliSopuli/mustapaiva">implementation</a> by <a href="http://wahalahti.fi" target="_blank">Wahalahti</a></div>';
             };
 
             var widgetElement = '<div id="copyright-campaign-box"><div class="inner-campaign-box";><a href="#" id="corner-close-button" class="close-copyright-campaign-box" style="color:#ffffff">Sulje</a><div class="campaign-text-content"><h1>'+options.title+'</h1><div class="subscribe">'+options.bigText+'</div><div>'+options.smallText+'</div><div><a href="#" class="close-copyright-campaign-box">Sulje</a></div></div>'+coders+'</div></div>';
