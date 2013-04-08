@@ -5,7 +5,9 @@ Internetin musta päivä 23.4.
 Tämä on WordPress lisäosa jonka asentamalla osallistut helposti Internetin mustaan päivään 23.4., voit asentaa ja aktivoida lisäosan jo nyt sillä se koodi tulee käyttöön vasta kampanjapäivänä (23.4.) ja näkyy jokaiselle sivuston kävijälle vain kerran.
 
 Alkuperäinen koodi: https://github.com/SC5/copyright-campaign
+
 Esimerkki toiminnasta: http://sc5.github.com/copyright-campaign/
+
 Lisätietoa kampanjasta: https://www.facebook.com/events/160986290729976/
 
 Asennus
