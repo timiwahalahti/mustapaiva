@@ -3,7 +3,7 @@
  * Plugin Name: Finnish Internet black day
  * Plugin URI: https://www.facebook.com/events/160986290729976/
  * Description: Use this plugin to add Finnish Internet black day code by SC5 for your site. You can install and enable plugin now, code is activated only on campaing day 23.4. 
- * Version: 1.3
+ * Version: 1.4
  * Author: Timi Wahalahti
  * Author URI: http://wahalahti.fi
  */
@@ -84,11 +84,21 @@ function mustapaiva_opt_page_fn() {
 }
 
 function mustapaiva_options_validate($input) {
-	$input['title'] =  wp_kses($input['title']);
-	$input['big_text'] =  wp_kses($input['big_text']);
-	$input['small_text'] =  wp_kses($input['small_text']);
-	$input['count_text'] =  wp_kses($input['count_text']);
-	$input['close_text'] =  wp_kses($input['close_text']);	
+	$validkses = array(
+    'a' => array(
+        'href' => array(),
+        'title' => array()
+    ),
+    'br' => array(),
+    'em' => array(),
+    'strong' => array()
+	);
+
+	$input['title'] =  wp_kses($input['title'], $validkses);
+	$input['big_text'] =  wp_kses($input['big_text'], $validkses);
+	$input['small_text'] =  wp_kses($input['small_text'], $validkses);
+	$input['count_text'] =  wp_kses($input['count_text'], $validkses);
+	$input['close_text'] =  wp_kses($input['close_text'], $validkses);	
 	return $input;
 }
 
