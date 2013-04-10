@@ -84,21 +84,11 @@ function mustapaiva_opt_page_fn() {
 }
 
 function mustapaiva_options_validate($input) {
-	$validkses = array(
-    'a' => array(
-        'href' => array(),
-        'title' => array()
-    ),
-    'br' => array(),
-    'em' => array(),
-    'strong' => array()
-	);
-
-	$input['title'] =  wp_kses($input['title'], $validkses);
-	$input['big_text'] =  wp_kses($input['big_text'], $validkses);
-	$input['small_text'] =  wp_kses($input['small_text'], $validkses);
-	$input['count_text'] =  wp_kses($input['count_text'], $validkses);
-	$input['close_text'] =  wp_kses($input['close_text'], $validkses);	
+	$input['title'] =  wp_kses_post($input['title']);
+	$input['big_text'] =  wp_kses_post($input['big_text']);
+	$input['small_text'] =  wp_kses_post($input['small_text']);
+	$input['count_text'] =  wp_kses_post($input['count_text']);
+	$input['close_text'] =  wp_kses_post($input['close_text']);	
 	return $input;
 }
 
