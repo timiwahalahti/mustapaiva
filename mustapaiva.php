@@ -3,7 +3,7 @@
  * Plugin Name: Internetin musta päivä
  * Plugin URI: https://www.facebook.com/events/160986290729976/
  * Description: Lisää sivullesi SC5:en tekemän koodin jolla osallistut Internetin mustaan päivään. Voit huoletta asentaa ja aktivoida lisäosan jo nyt, se muuttaa sivustoasi vasta kampanjapäivänä 23.4. Muokkaa asetuksia 'Asetukset' -välilehdellä 
- * Version: 1.2
+ * Version: 1.3
  * Author: Timi Wahalahti
  * Author URI: http://wahalahti.fi
  */
