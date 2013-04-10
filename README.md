@@ -2,7 +2,9 @@ Internetin musta päivä 23.4.
 ====================================
 "Päivä, jolloin Internet muuttuu Suomessa mustaksi." https://www.facebook.com/events/160986290729976/
 
-Tämä on WordPress lisäosa jonka asentamalla osallistut helposti Internetin mustaan päivään 23.4., voit asentaa ja aktivoida lisäosan jo nyt sillä koodi tulee käyttöön vasta kampanjapäivänä (23.4.). Lisäosa käyttää SC5:en tekemää jQuery-koodia.
+Tämä on WordPress lisäosa jonka asentamalla osallistut helposti Internetin mustaan päivään 23.4., voit asentaa ja aktivoida lisäosan jo nyt sillä koodi tulee käyttöön vasta kampanjapäivänä (23.4.). Sivustosi kävijöille näytetään kampanjapäivänä 23.4. viesti jossa kehoitetaan allekirjoittamaan Järkeä tekijänoikeuslakiin kansalaisaloite. Lisäosa käyttää SC5:en tekemää jQuery-koodia.
+
+Suositeltu asennustapa on wordpress.orgin kautta, lisäosan löytää nimellä Finnish internet black day tai osoitteesta http://wordpress.org/extend/plugins/finnish-internet-black-day/
 
 Alkuperäinen koodi: https://github.com/SC5/copyright-campaign ja esimerkki toiminnasta: http://sc5.github.com/copyright-campaign
 

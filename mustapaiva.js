@@ -11,6 +11,8 @@ var copyrightCampaign = function(options) {
     setDefaultOption("title", 'Järkeä tekijänoikeuslakiin?');
     setDefaultOption("bigText", 'Allekirjoita <a href="https://www.kansalaisaloite.fi/fi/aloite/70" target="_blank">kansalaisaloite kohtuullisemman tekijänoikeuslain puolesta</a>.');
     setDefaultOption("smallText", 'Katso myös: <a href="https://www.facebook.com/events/160986290729976/" target="_blank">Internetin musta päivä 23.4.</a>');
+    setDefaultOption("countText", 'Allekirjoituksia jo');
+    setDefaultOption("closeText", 'Sulje');
 
     console.log(options);
 
@@ -37,8 +39,7 @@ var copyrightCampaign = function(options) {
         jQuery(document).ready(function (e) {
             jQuery("head").prepend("<link href='http://fonts.googleapis.com/css?family=Open+Sans:800|Gentium+Book+Basic' rel='stylesheet' type='text/css'>");
             
-            var widgetStyle = '<style type="text/css">#copyright-campaign-box { z-index:1000;position:fixed;top:0;left:0;width:100%;height:100%;background:rgb(0,0,0);background:rgba(0,0,0,0.9);text-align:center;font-family:\'Gentium Book Basic\', serif;letter-spacing:0.1em;font-size:1em; } .inner-campaign-box { position:fixed;top:28px;right:28px;bottom:28px;left:28px;color:#EFEFEF;padding:20px;border:5px solid #ffffff; } #corner-close-button { position:fixed;top:8px;right:8px;padding:8px 16px;border-radius:2em;text-decoration:none;border:5px solid #ffffff;color:#ffffff;background:#000000;font-size:1em;font-weight:bold; } #corner-close-button:hover { background:#333333; } #campaign-text-content { position:fixed;top:30%;left:0;width:100%; } #copyright-campaign-box h1 { width:100%;font-family:\'Open Sans\', sans-serif;text-transform:uppercase;text-align:center;font-size:2.5em;margin: 0 auto 40px auto; } .campaign-text-content div { max-width:25em; padding: 0 30px; margin: 0 auto 40px auto; } #copyright-campaign-box a { color:#aaaacc;text-decoration:none; } #copyright-campaign-box a:hover { color:#ccccee;text-decoration:none; } #copyright-campaign-box .subscribe { font-size:1.5em; } #copyright-campaign-box .credits { position:fixed;bottom:40px;left:0;text-align:center;width:100%; } @media (max-width: 680px) { #copyright-campaign-box, #copyright-campaign-box .subscribe { font-size:1em; } #copyright-campaign-box h1 { font-size:1.5em; } .campaign-text-content { top: 20% } .campaign-text-content div, #copyright-campaign-box h1 { margin-bottom: 20px; } } @media(max-height: 500px) { .campaign-text-content { top: 10%; } .campaign-text-content div, #copyright-campaign-box h1 { margin-bottom: 10px; max-width: 35em } #copyright-campaign-box .credits { position: static;width:auto;max-width:none;} } </style>';
-
+var widgetStyle = '<style type="text/css">#copyright-campaign-box { z-index:1000;position:fixed;top:0;left:0;width:100%;height:100%;background:rgb(0,0,0);background:rgba(0,0,0,0.9);text-align:center;font-family:\'Gentium Book Basic\', serif;letter-spacing:0.1em;font-size:1em; } .inner-campaign-box { position:fixed;top:28px;right:28px;bottom:28px;left:28px;color:#EFEFEF;padding:20px;border:5px solid #ffffff; } #corner-close-button { position:fixed;top:8px;right:8px;padding:8px 16px;border-radius:2em;text-decoration:none;border:5px solid #ffffff;color:#ffffff;background:#000000;font-size:1em;font-weight:bold; } #corner-close-button:hover { background:#333333; } .campaign-text-content { position:fixed;top:15%;left:0;right:0;bottom:0; padding: 35px; } #copyright-campaign-box h1 { width:100%;font-family:\'Open Sans\', sans-serif;text-transform:uppercase;text-align:center;font-size:2.5em;margin: 0 auto 40px auto; } .campaign-text-content div { max-width:35em; padding: 0 30px; margin: 0 auto 40px auto; } #copyright-campaign-box a { color:#aaaacc;text-decoration:none; } #copyright-campaign-box a:hover { color:#ccccee;text-decoration:none; } #copyright-campaign-box .subscribe { font-size:1.5em; } #subscriptions { display: none; } #copyright-campaign-box .credits { position:fixed;bottom:40px;left:0;text-align:center;width:100%; } @media (max-width: 680px) { #copyright-campaign-box, #copyright-campaign-box .subscribe { font-size:1em; } #copyright-campaign-box h1 { font-size:1.2em; } .campaign-text-content div, #copyright-campaign-box h1 { margin-bottom: 20px; max-width: none; padding: 0; } } @media(max-height: 550px) { .campaign-text-content { position: static; padding: 0; } .campaign-text-content div, #copyright-campaign-box h1 { margin-bottom: 10px; } #copyright-campaign-box .credits { position: static;width:auto;max-width:none;} #closeCampaignText, .credits { display: none; } } </style>';
             jQuery("head").prepend(widgetStyle);
 
             var coders = '';
@@ -46,7 +47,7 @@ var copyrightCampaign = function(options) {
                 var coders = '<div class="credits"><a href="https://github.com/SC5/copyright-campaign/">Code</a> by <a href="http://sc5.io" target="_blank">SC5</a> and WordPress <a href="https://github.com/SipuliSopuli/mustapaiva">implementation</a> by <a href="http://wahalahti.fi" target="_blank">Wahalahti</a></div>';
             };
 
-            var widgetElement = '<div id="copyright-campaign-box"><div class="inner-campaign-box";><a href="#" id="corner-close-button" class="close-copyright-campaign-box" style="color:#ffffff">Sulje</a><div class="campaign-text-content"><h1>'+options.title+'</h1><div class="subscribe">'+options.bigText+'</div><div>'+options.smallText+'</div><div><a href="#" class="close-copyright-campaign-box">Sulje</a></div></div>'+coders+'</div></div>';
+            var widgetElement = '<div id="copyright-campaign-box"><div class="inner-campaign-box";><a href="#" id="corner-close-button" class="close-copyright-campaign-box" style="color:#ffffff">'+options.closeText+'</a><div class="campaign-text-content"><h1>'+options.title+'</h1><div class="subscribe">'+options.bigText+'</div><div id="subscriptions">'+options.countText+' <span id="subscriptionCount"><b></b></span>!</div><div>'+options.smallText+'</div><div><a href="#" class="close-copyright-campaign-box">'+options.closeText+'</a></div></div>'+coders+'</div></div>';
             jQuery(document.body).append(widgetElement);
 
             function hideBox() {
@@ -68,6 +69,13 @@ var copyrightCampaign = function(options) {
                 if (e.keyCode == 27) {
                     hideBox();
                 }
+            });
+
+            jQuery.getJSON("https://www.kansalaisaloite.fi/api/v1/initiatives/70?jsonp=?").done(function(data) {
+                    if (data.supportCount) {
+                        jQuery("#subscriptionCount b").html(data.supportCount);
+                        jQuery("#subscriptions").show();
+                    }
             });
         });
     }
