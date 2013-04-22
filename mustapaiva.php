@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: Finnish Internet black day
- * Plugin URI: https://www.facebook.com/events/160986290729976/
+ * Plugin URI: http://mustapaiva.jarkea.fi
  * Description: Use this plugin to add Finnish Internet black day code by SC5 for your site. You can install and enable plugin now, code is activated only on campaing day 23.4. 
- * Version: 1.4
+ * Version: 1.7
  * Author: Timi Wahalahti
  * Author URI: http://wahalahti.fi
  */
@@ -16,7 +16,7 @@ function mustapaiva_opt_init_fn(){
 	register_setting('mustapaiva_options', 'mustapaiva_options', 'mustapaiva_options_validate' );
 	add_settings_section('main_section', 'Settings', 'section_text_fn', __FILE__);
 	add_settings_field('only', 'Code is active every day:<br><small>By default, code is active only 23.4.</small>', 'setting_string_only', __FILE__, 'main_section');
-	add_settings_field('once', 'Show only once:<br><small>By default, visitor sees message only once</small>', 'setting_string_once', __FILE__, 'main_section');
+	add_settings_field('once', 'Show always:<br><small>By default, visitor sees message only once</small>', 'setting_string_once', __FILE__, 'main_section');
 	add_settings_field('title', 'Title:', 'setting_string_title', __FILE__, 'main_section');
 	add_settings_field('big_text', 'Big text:', 'setting_string_big_text', __FILE__, 'main_section');
 	add_settings_field('small_text', 'Small text:', 'setting_string_small_text', __FILE__, 'main_section');
